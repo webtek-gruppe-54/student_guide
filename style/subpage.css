@@ -96,5 +96,58 @@ img {
     margin-left: -400px;
 }
 
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--lime-green-200, #E5F297);;
+    margin-top: 150px;
+    min-height: 320px;
+    border: 2px dotted black;
 
+
+}
+
+.footer .logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 50px 50px 0 50px;
+    font-size: 25px;
+    font-style: normal;
+}
+
+.footer .info {
+    font-size: 12px;
+    display: grid;
+    grid-template-columns: 6fr 10fr 10fr;
+    grid-row: 1fr 1fr 1fr 1fr;
+    column-gap: 70px;
+
+    flex-basis: 200px;
+    border: 2px solid red;
+
+}
+
+.footer #left {
+    grid-column: 1 / 2;
+    padding-left: 100px;
+    border: 2px solid red;
+    align-self: center;
+}
+
+.footer #middle {
+    grid-column: 2 / 3;
+    border: 2px red solid;
+    
+
+}
+
+.footer #right {
+    grid-column: 3 /4;
+}
+
+.footer li {
+    list-style-type: none;
+    padding: 8px 0;
+}
 
