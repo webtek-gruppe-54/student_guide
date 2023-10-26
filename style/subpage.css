@@ -19,6 +19,28 @@ body {
 }
 
 .intro {
-    padding-top: 50px;
-    height: 30vh;
+    padding: 150px 350px 100px 350px;
+    min-height: 350px;
+    border: 2px solid red;
 }
+
+.box {
+    display: flex;
+    justify-content: space-between;
+    min-height: 380px;
+    padding: 100px 100px 0 0;
+    border: 2px solid green; 
+}
+
+.left, .right {
+    display: flex;
+    flex: 1;
+    border: 1px dotted blue;
+}
+
+.left .rectangle {
+    height: 380px;
+    width: 500px;
+    background-color: pink;
+}
+
