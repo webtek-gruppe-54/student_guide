@@ -36,6 +36,44 @@ a {
     background-color: #FDF0FF;
 }
 
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--purple-200, #E5E0FF);
+    min-width: 160px;
+    z-index: 1;
+    border-radius: 8px;
+}
+
+.dropdown-content a {
+    color: var(--purple-900, #5A54FD);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.dropdown-content a:hover {
+    display: inline-flex;
+    color: var(--purple-900, #5A54FD);
+}
+
+#mainMenu li:hover {
+    color: var(--purple-1000, #0A03C9);  /* This is the default color you have for the navbar text */
+}
+
+.menu-icon {
+    vertical-align: middle;
+}
+
+#mainMenu li:hover .dropdown-content {
+    display: block;
+}
+
 .logo {
     display: flex;
     align-items: center; /* Centers logo elements vertically */
@@ -62,11 +100,11 @@ a {
 .navbar ul {
     display: flex;
     list-style-type: none; /* Removes bullets from the list */
-    margin-right: 41px;
+    margin-right: 100px;
 }
 
 .navbar li {
-    margin-left: 20px; /* Space between list items */
+    margin-left: 80px; /* Space between list items */
     font-size: 18px; /* Adjust the font size as needed */
     cursor: pointer; /* Changes cursor to hand pointer on hover */
 }

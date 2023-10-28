@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" type="text/css" href="./style/subpage.css">
+    <script src="scripts/main.js" defer></script>
 </head>
 <body class="landingPage">
     <div class="container">
@@ -16,12 +17,43 @@
                     </svg>
                     <span>StudentCompass</span>
                 </div>
-              </a>              
-            <ul>
-                <li>Activities</li>
-                <li>SIT Offerings</li>
-            </ul>    
+            </a>
+            <ul id="mainMenu">
+                <li id="activities">
+                    <svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <mask id="mask0_241_86" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
+                            <rect width="20" height="20" fill="#D9D9D9"/>
+                        </mask>
+                        <g mask="url(#mask0_241_86)">
+                            <path d="M10 12.4583C9.88891 12.4583 9.78474 12.441 9.68752 12.4063C9.5903 12.3715 9.50002 12.3125 9.41669 12.2292L5.58335 8.39583C5.43058 8.24306 5.35419 8.04861 5.35419 7.8125C5.35419 7.57639 5.43058 7.38194 5.58335 7.22917C5.73613 7.07639 5.93058 7 6.16669 7C6.4028 7 6.59724 7.07639 6.75002 7.22917L10 10.4792L13.25 7.22917C13.4028 7.07639 13.5972 7 13.8334 7C14.0695 7 14.2639 7.07639 14.4167 7.22917C14.5695 7.38194 14.6459 7.57639 14.6459 7.8125C14.6459 8.04861 14.5695 8.24306 14.4167 8.39583L10.5834 12.2292C10.5 12.3125 10.4097 12.3715 10.3125 12.4063C10.2153 12.441 10.1111 12.4583 10 12.4583Z" fill="#5A54FD"/>
+                        </g>
+                    </svg>
+                    Activities
+                    <div class="dropdown-content">
+                        <a href="shopping.html">Shopping</a>
+                        <a href="walks.html">Walks</a>
+                        <a href="clubsBars.html">Clubs and Bars</a>
+                        <a href="cafes.html">Cafes</a>
+                    </div>
+                </li>
+                <li id="sitOfferings">
+                    <svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <mask id="mask0_241_86" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
+                            <rect width="20" height="20" fill="#D9D9D9"/>
+                        </mask>
+                        <g mask="url(#mask0_241_86)">
+                            <path d="M10 12.4583C9.88891 12.4583 9.78474 12.441 9.68752 12.4063C9.5903 12.3715 9.50002 12.3125 9.41669 12.2292L5.58335 8.39583C5.43058 8.24306 5.35419 8.04861 5.35419 7.8125C5.35419 7.57639 5.43058 7.38194 5.58335 7.22917C5.73613 7.07639 5.93058 7 6.16669 7C6.4028 7 6.59724 7.07639 6.75002 7.22917L10 10.4792L13.25 7.22917C13.4028 7.07639 13.5972 7 13.8334 7C14.0695 7 14.2639 7.07639 14.4167 7.22917C14.5695 7.38194 14.6459 7.57639 14.6459 7.8125C14.6459 8.04861 14.5695 8.24306 14.4167 8.39583L10.5834 12.2292C10.5 12.3125 10.4097 12.3715 10.3125 12.4063C10.2153 12.441 10.1111 12.4583 10 12.4583Z" fill="#5A54FD"/>
+                        </g>
+                    </svg>
+                    SIT Offerings
+                    <div class="dropdown-content">
+                        <a href="housing.html">Student Housing</a>
+                        <a href="gym.html">Gym</a>
+                    </div>
+                </li>
+            </ul>
         </nav>
+        
 
         <div class="LandingPage">
             <section class="intro">
