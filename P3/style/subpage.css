@@ -138,6 +138,10 @@ a {
     line-height: normal;
 }
 
+.left .h2-purple {
+    color: var(--purple-900, #5A54FD);
+}
+
 .left-aligned-box .right {
     display: flex;
     flex: 1;
@@ -175,13 +179,33 @@ a {
 .right .rectangle {
     height: 380px;
     width: 500px;
-    border-radius: 0px 10px 10px 0px;
+    border-radius: 10px 0px 0px 10px;
     margin-left: -400px;
 }
 
 .right h2 {
     align-self: stretch;
     color: var(--pink-500, #EC92F6);
+    text-align: right;
+    /* Header/H1/bold */
+    font-family: Inter;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.right .h2-teal {
+    color: var(--teal-600, #32929A);
+}
+
+.right .h2-yellow {
+    color: #93A815;
+}
+
+.right .h2-teal {
+    align-self: stretch;
+    color: var(--teal-600, #32929A);
     text-align: right;
     /* Header/H1/bold */
     font-family: Inter;
@@ -246,16 +270,121 @@ a {
 
 /* Landing page styles */
 
-body.landingpage {
+body.landingPage {
     background-color: #EEEBFF;
 }
 
-.LandingPage .intro{
+.landingPage .intro{
     background: #EEEBFF;
+}
+.LandingPage .intro .text {
+    display: flex;
+    flex-direction: row;
+}
+
+.LandingPage .intro img {
+    width: 281px;
+    height: 400px;
+    flex-shrink: 0;
+    margin-left: 75px;
+    margin-bottom: -90px;
+}
+
+.landingPage .intro h1 {
+    color: var(--teal-700, #266D73);
+    text-align: center;
+    font-family: Inter;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 849px;
+    margin-top: -20px;
+}
+
+.landingPage .intro p {
+    color: var(--teal-700, #266D73);
+    /* Header/H3/regular */
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 307px;
+    margin-left: auto;
+    margin-top: -15px;
+}
+
+.landingPage .left-aligned-box .right {
+    width: 360px;
+    margin-left: 99px;
+    margin-top: 52px;
+    margin-bottom: 160px;
+}
+
+
+.landingPage .right h2 {
+    align-self: stretch;
+    color: var(--pink-500, #EC92F6);
+    text-align: center;
+    /* Header/H1/bold */
+    font-family: Inter;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.landingPage .left h2 {
+    align-self: stretch;
+    color: var(--purple-900, #5A54FD);
+    text-align: center;
+    /* Header/H1/bold */
+    font-family: Inter;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.landingPage .right button {
+    margin-top: 20px;
 }
 
 .LandingPage .left-aligned-box {
     background: #EEEBFF;
+}
+
+.LandingPage .left-aligned-box .left {
+    background: #EEEBFF;
+}
+
+.LandingPage .left-aligned-box .right {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    color: var(--black, #1E1E1E);
+    text-align: center;
+    /* Header/H3/regular */
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.LandingPage .right-aligned-box .left {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    color: var(--black, #1E1E1E);
+    text-align: center;
+    /* Header/H3/regular */
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 .LandingPage .right-aligned-box {
@@ -267,6 +396,7 @@ body.landingpage {
     display: inline-flex;
     padding: 8px 12px;
     align-items: center;
+    align-self: center;
     gap: 10px;
     border: none; /* Remove the border */
     border-radius: 5px;
@@ -283,10 +413,60 @@ body.landingpage {
     appearance: none;         /* Remove browser-specific appearance */
 }
 
+.landingPage .left img {
+    height: 367px;
+    width: 629px;
+    border-radius: 0px 10px 10px 0px;
+    margin-right: -400px;
+}
+
+.landingPage .right img {
+    height: 367px;
+    width: 629px;
+}
+
+
 
 .left-aligned-box .right .cafeButton:hover {
     background-color: #DB8AE3;
 }
+
+
+.landingPage .right-aligned-box .left {
+    width: 360px;
+    margin-left: 99px;
+    margin-top: 52px;
+    margin-bottom: 160px;
+}
+
+.right-aligned-box .left .clubsButtom {
+    width: 191px;
+    display: inline-flex;
+    padding: 8px 12px;
+    align-items: center;
+    align-self: center;
+    gap: 10px;
+    border: none; /* Remove the border */
+    border-radius: 5px;
+    background: var(--purple-900, #5A54FD);    color: #FFF;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    outline: none; /* Remove focus outline */
+    -webkit-appearance: none; /* For Safari */
+    -moz-appearance: none;    /* For Firefox */
+    appearance: none;  
+}
+
+.right-aligned-box .left .clubsButtom:hover {
+    background-color: blue;
+}
+
+/* walks page styles */
+
+
 
 
 
