@@ -312,10 +312,11 @@ body.landingPage {
 }
 
 .landingPage .intro{
+    display: flex;
+    justify-content: center;
     background: #EEEBFF;
 }
 .LandingPage .intro .text {
-    display: flex;
     flex-direction: row;
 }
 
@@ -326,8 +327,6 @@ body.landingPage {
 }
 
 .landingPage .intro img {
-    top: 200px;
-    left: 550px;
     width: 281px;
     height: 400px;
 }
@@ -342,7 +341,7 @@ body.landingPage {
     font-weight: 700;
     line-height: normal;
     width: 400px;
-    margin-left: 0px;
+    margin-left: -380px;
     margin-top: 230px;
 }
 
@@ -355,7 +354,7 @@ body.landingPage {
     font-weight: 400;
     line-height: normal;
     width: 307px;
-    margin-left: 500px;
+    margin-left: 150px;
     margin-top: 250px;
     text-align: left;
 }
@@ -519,9 +518,3 @@ body.landingPage {
     vertical-align: middle;
     text-align: right;
 }
-
-
-
-
-
-
