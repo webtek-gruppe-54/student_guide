@@ -546,6 +546,10 @@ body.landingPage {
     gap: 20px;
 }
 
+#imageMapContainer figure {
+    margin: 0px;
+}
+
 #slideshow-container p {
     color: var(--black, #1E1E1E);
 }
