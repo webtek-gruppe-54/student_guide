@@ -98,3 +98,14 @@ document.addEventListener('DOMContentLoaded', (event) => {
     showFigureText(index);
   });
   
+//sticky navbar function
+window.onscroll = function() {
+  let navbar = document.getElementById("navbar");
+  if (window.scrollY > 0) {
+    // Add a class when the scroll is more than 0
+    navbar.classList.add("sticky");
+  } else {
+    // Remove the class when the scroll is back to the top
+    navbar.classList.remove("sticky");
+  }
+};
