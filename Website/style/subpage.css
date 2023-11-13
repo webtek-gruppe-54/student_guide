@@ -21,7 +21,7 @@ a {
     justify-content: space-between;
 }
 
-.navbar {
+#navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -96,20 +96,20 @@ a {
 
 
 
-.navbar ul {
+#navbar ul {
     display: flex;
     list-style-type: none; /* Removes bullets from the list */
     margin-right: 100px;
 }
 
-.navbar li {
+#navbar li {
     margin-left: 80px; /* Space between list items */
     font-size: 18px; /* Adjust the font size as needed */
     cursor: pointer; /* Changes cursor to hand pointer on hover */
 }
 
 /* Optional: add hover effect to list items */
-.navbar li:hover {
+#navbar li:hover {
     color: #ff6600; /* Change the color as desired */
 }
 
@@ -546,6 +546,10 @@ body.landingPage {
     gap: 20px;
 }
 
+#imageMapContainer figure {
+    margin: 0px;
+}
+
 #slideshow-container p {
     color: var(--black, #1E1E1E);
 }
@@ -591,3 +595,10 @@ body.landingPage {
     border-radius: 5px;
 }
 
+/* for sticky navbar function */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+  }

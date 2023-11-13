@@ -41,6 +41,14 @@ document.addEventListener('DOMContentLoaded', (event) => {
         "Bymarka.jpg",
         "HavetBadstu.jpeg",
       ];
+
+    const figureText = [
+      "Samfundet: Trondheims Sirkel av Kultur, Samhold og Scenedebatter, for og av studenter",
+      "Nidarosdomen: Trondheims Historiske Hjerte og Norges Nasjonale Helligdom",
+      "Bakklandet i Trondheim: Pastellhus, Brosteinsgater og Byens Pulserende Møteplass",
+      "Bymarka: Trondheims Grønne Skattkammer med Stier for Alle Steg og Ski",
+      "HAVET på Nyhavna: Lunhet, Kultur og Kos i Trondheims Sjøkant",
+    ]
     
     const samfundetCoordinate = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1785.0766029015138!2d10.392433477648467!3d63.422495376848595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x466d319143981307%3A0xb5338a2acc49470f!2sStudent%20Society%20in%20Trondheim!5e0!3m2!1sen!2sno!4v1699626737090!5m2!1sen!2sno";
     const nidarosdomenCoordinate = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1784.8016878709757!2d10.394362577648714!3d63.42690967685129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x466d31908505a019%3A0xb965bfe4f7eb71fd!2sNidaros%20Cathedral!5e0!3m2!1sen!2sno!4v1699627087612!5m2!1sen!2sno";
@@ -65,11 +73,18 @@ document.addEventListener('DOMContentLoaded', (event) => {
         const slide = document.getElementById('maps');
         slide.src = coordinates[index];
       }
+
+    //Slideshow Figuretext
+    function showFigureText() {
+      const slide = document.getElementById('bildetekst');
+      slide.textContent = figureText[index];
+    }
   
     document.getElementById('next').addEventListener('click', () => {
       index++;
       showSlide(index);
       showMap(index);
+      showFigureText(index);
     });
   
     document.getElementById('prev').addEventListener('click', () => {
@@ -80,5 +95,17 @@ document.addEventListener('DOMContentLoaded', (event) => {
   
     showSlide(index);
     showMap(index);
+    showFigureText(index);
   });
   
+//sticky navbar function
+window.onscroll = function() {
+  let navbar = document.getElementById("navbar");
+  if (window.scrollY > 0) {
+    // Add a class when the scroll is more than 0
+    navbar.classList.add("sticky");
+  } else {
+    // Remove the class when the scroll is back to the top
+    navbar.classList.remove("sticky");
+  }
+};
