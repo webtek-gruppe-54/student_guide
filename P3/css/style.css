@@ -1,0 +1,22 @@
+body {
+    background-color: rgb(202, 249, 249);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    border: 1px dashed rgb(154, 154, 244);
+    margin: 30px;
+    padding: 20px;
+}
+
+img {
+    width: 400px;
+    height: auto;
+}
+
